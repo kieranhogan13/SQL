@@ -1,0 +1,23 @@
+Application = PK*Application-No* + PK*ApplicYear* + FK*StudentID* + *Reference-Name* + *RefInstitution* + Prior-School-Id
+Student = *StudentID* + StudentName + GPA
+Address = Street + State + Zip-Code
+Reference = PK*Reference-Name* + PK*RefInstitution* + Reference-Statement
+PriorSchool = *Prior-School-Id* + Prior-School-Addr
+
+
+
+
+
+This virtual machine is configured for 64-bit guest operating systems. However, 64-bit operation is not possible.
+
+This host supports Intel VT-x, but Intel VT-x is disabled.
+
+Intel VT-x might be disabled if it has been disabled in the BIOS/firmware settings or the host has not been power-cycled since changing this setting.
+
+(1) Verify that the BIOS/firmware settings enable Intel VT-x and disable 'trusted execution.'
+
+(2) Power-cycle the host if either of these BIOS/firmware settings have been changed.
+
+(3) Power-cycle the host if you have not done so since installing VMware Workstation.
+
+(4) Update the host's BIOS/firmware to the latest version.
